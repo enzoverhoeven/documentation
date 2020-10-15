@@ -1,0 +1,49 @@
+PLATFORM VERSION INFO
+	Windows 			: 6.3.9600.0 (Win32NT)
+	Common Language Runtime 	: 4.0.30319.42000
+	System.Deployment.dll 		: 4.8.3761.0 built by: NET48REL1
+	clr.dll 			: 4.8.4110.0 built by: NET48REL1LAST_B
+	dfdll.dll 			: 4.8.3761.0 built by: NET48REL1
+	dfshim.dll 			: 6.3.9600.16384 (winblue_rtm.130821-1623)
+
+SOURCES
+	Deployment url			: file:///C:/Users/server/Desktop/Logic4%20Leveranciers%20Connector%20v1.7.appref-ms%7C
+						Server		: Microsoft-IIS/8.5
+						X-Powered-By	: ASP.NET
+
+ERROR SUMMARY
+	Below is a summary of the errors, details of these errors are listed later in the log.
+	* Activation of C:\Users\server\Desktop\Logic4 Leveranciers Connector v1.7.appref-ms| resulted in exception. Following failure messages were detected:
+		+ Value does not fall within the expected range.
+
+COMPONENT STORE TRANSACTION FAILURE SUMMARY
+	No transaction error was detected.
+
+WARNINGS
+	There were no warnings during this operation.
+
+OPERATION PROGRESS STATUS
+	* [19-9-2020 22:37:53] : Activation of C:\Users\server\Desktop\Logic4 Leveranciers Connector v1.7.appref-ms| has started.
+	* [19-9-2020 22:37:53] : Performing necessary update check as specified by the deployment.
+
+ERROR DETAILS
+	Following errors were detected during this operation.
+	* [19-9-2020 22:37:54] System.ArgumentException
+		- Value does not fall within the expected range.
+		- Source: System.Deployment
+		- Stack trace:
+			at System.Deployment.Application.NativeMethods.CorLaunchApplication(UInt32 hostType, String applicationFullName, Int32 manifestPathsCount, String[] manifestPaths, Int32 activationDataCount, String[] activationData, PROCESS_INFORMATION processInformation)
+			at System.Deployment.Application.ComponentStore.ActivateApplication(DefinitionAppId appId, String activationParameter, Boolean useActivationParameter)
+			at System.Deployment.Application.SubscriptionStore.ActivateApplication(DefinitionAppId appId, String activationParameter, Boolean useActivationParameter)
+			at System.Deployment.Application.ApplicationActivator.Activate(DefinitionAppId appId, AssemblyManifest appManifest, String activationParameter, Boolean useActivationParameter)
+			at System.Deployment.Application.ApplicationActivator.ProcessOrFollowShortcut(String shortcutFile, String& errorPageUrl, TempFile& deployFile)
+			at System.Deployment.Application.ApplicationActivator.PerformDeploymentActivation(Uri activationUri, Boolean isShortcut, String textualSubId, String deploymentProviderUrlFromExtension, BrowserSettings browserSettings, String& errorPageUrl, Uri& deploymentUri)
+			at System.Deployment.Application.ApplicationActivator.PerformDeploymentActivationWithRetry(Uri activationUri, Boolean isShortcut, String textualSubId, String deploymentProviderUrlFromExtension, BrowserSettings browserSettings, String& errorPageUrl)
+--- End of stack trace from previous location where exception was thrown ---
+			at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+			at System.Deployment.Application.ApplicationActivator.PerformDeploymentActivationWithRetry(Uri activationUri, Boolean isShortcut, String textualSubId, String deploymentProviderUrlFromExtension, BrowserSettings browserSettings, String& errorPageUrl)
+			at System.Deployment.Application.ApplicationActivator.ActivateDeploymentWorker(Object state)
+
+COMPONENT STORE TRANSACTION DETAILS
+	No transaction information is available.
+
